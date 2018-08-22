@@ -174,9 +174,9 @@ bootstrap() {
  #   sudo usermod -aG docker $USER
   #  sudo usermod -aG docker root
     echo "${green}installed dependencies.${reset}"
-  else
-    echo "${green}FIXME: linux install of ( ${formulas[@]} ${taps[@]} ${casks[@]} ) not yet implemented${reset}"
-  fi
+#  else
+ #   echo "${green}FIXME: linux install of ( ${formulas[@]} ${taps[@]} ${casks[@]} ) not yet implemented${reset}"
+  #fi
 
   for n in yo grunt-cli bower; do
     [[ ! $(npm -g list 2>/dev/null | grep ${n}) ]] && npm -g install ${n}
