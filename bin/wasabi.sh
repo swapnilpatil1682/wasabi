@@ -167,7 +167,7 @@ bootstrap() {
     #sudo rm -rf /tmp/docker.list
     #sudo apt-get purge lxc-docker
     sudo apt-get update
-    sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+  #  sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
 #    sudo apt-get install -y docker-engine
 
   #  sudo groupadd docker
