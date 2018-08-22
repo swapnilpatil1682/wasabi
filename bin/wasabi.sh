@@ -170,7 +170,7 @@ bootstrap() {
     sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
     sudo apt-get install -y docker-engine
 
-    sudo groupadd docker
+  #  sudo groupadd docker
     sudo usermod -aG docker $USER
     sudo usermod -aG docker root
     echo "${green}installed dependencies.${reset}"
