@@ -168,11 +168,11 @@ bootstrap() {
     sudo apt-get purge lxc-docker
     sudo apt-get update
     sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
-    sudo apt-get install -y docker-engine
+#    sudo apt-get install -y docker-engine
 
   #  sudo groupadd docker
-    sudo usermod -aG docker $USER
-    sudo usermod -aG docker root
+ #   sudo usermod -aG docker $USER
+  #  sudo usermod -aG docker root
     echo "${green}installed dependencies.${reset}"
   else
     echo "${green}FIXME: linux install of ( ${formulas[@]} ${taps[@]} ${casks[@]} ) not yet implemented${reset}"
