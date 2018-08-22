@@ -182,9 +182,9 @@ bootstrap() {
     [[ ! $(npm -g list 2>/dev/null | grep ${n}) ]] && npm -g install ${n}
   done
 
-  [[ ! $(gem list | grep compass) ]] && gem install compass
+  gem install compass
 
-
+}
 build() {
   ./bin/build.sh -b ${1:-false} -t ${2:-false} -p ${3:-development}
 }
