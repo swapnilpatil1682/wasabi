@@ -183,7 +183,7 @@ bootstrap() {
   done
 
   [[ ! $(gem list | grep compass) ]] && gem install compass
-}
+
 
 build() {
   ./bin/build.sh -b ${1:-false} -t ${2:-false} -p ${3:-development}
